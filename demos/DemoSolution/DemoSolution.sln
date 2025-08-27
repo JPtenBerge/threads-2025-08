@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject", "DemoProject\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWpf", "DemoWpf\DemoWpf.csproj", "{E3F69BB6-0241-40D5-99C4-BC3BF87D0AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTpl", "DemoTpl\DemoTpl.csproj", "{EA288359-D5AE-44D7-81B2-BCFA4A1A3ECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{E3F69BB6-0241-40D5-99C4-BC3BF87D0AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3F69BB6-0241-40D5-99C4-BC3BF87D0AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3F69BB6-0241-40D5-99C4-BC3BF87D0AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA288359-D5AE-44D7-81B2-BCFA4A1A3ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA288359-D5AE-44D7-81B2-BCFA4A1A3ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA288359-D5AE-44D7-81B2-BCFA4A1A3ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA288359-D5AE-44D7-81B2-BCFA4A1A3ECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
