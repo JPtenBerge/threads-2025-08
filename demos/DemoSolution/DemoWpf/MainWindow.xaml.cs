@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.ComponentModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -32,5 +33,40 @@ public partial class MainWindow : Window
 			});
 		});
 		t.Start();
+	}
+
+
+	private void BtnWorker_OnClick(object sender, RoutedEventArgs e)
+	{
+		var worker = new BackgroundWorker();
+		worker.WorkerReportsProgress = true;
+		worker.DoWork += (o, args) =>
+		{
+			try
+			{
+				// lblVoortgang.Content = $"testje";
+				worker.ReportProgress(20);
+				Thread.Sleep(1500);
+				worker.ReportProgress(40);
+				Thread.Sleep(500);
+				worker.ReportProgress(45);
+				Thread.Sleep(5000);
+				worker.ReportProgress(80);
+				Thread.Sleep(1000);
+				worker.ReportProgress(100);
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("ohoh! " + ex.Message);
+			}
+		};
+		
+		worker.ProgressChanged += (sender, args) =>
+		{
+			lblVoortgang.Content = $"Voortgang nu op {args.ProgressPercentage}%";
+		};
+		worker.RunWorkerAsync();
+
 	}
 }

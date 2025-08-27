@@ -17,7 +17,10 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         
-        <Label Name="lblResult" Grid.Row="1" Grid.Column="2">(hier het result)</Label>
+        <Label Name="lblResult" Grid.Row="1" Grid.Column="0">(hier het result)</Label>
         <Button Click="ButtonBase_OnClick">Klik mij</Button>
+        
+        <Button Name="btnWorker" Click="BtnWorker_OnClick" Grid.Column="2" Grid.Row="0">BackgroundWorker</Button>
+        <Label Name="lblVoortgang" Grid.Row="1" Grid.Column="2">(hier het result)</Label>
     </Grid>
 </Window>
