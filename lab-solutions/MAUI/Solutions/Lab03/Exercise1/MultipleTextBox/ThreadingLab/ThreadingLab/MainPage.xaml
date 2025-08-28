@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreadingLab.MainPage" HeightRequest="300" WidthRequest="400" MaximumHeightRequest="300">
+
+ 
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="LightBlue" Offset="0.1"/>
+                        <GradientStop Color="LightGray" Offset="0.3"/>
+                        <GradientStop Color="LightGray" Offset="0.7"/>
+                        <GradientStop Color="LightBlue" Offset="0.9"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="1" Grid.ColumnSpan="2" Text="Threading" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Margin="1" HeightRequest="40"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="Eerste getal:"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="Tweede getal:"/>
+                <Label Grid.Column="1" Grid.Row="3" Text="Derde getal:" />
+                <Label Grid.Column="1" Grid.Row="4" Text="Totaal:"  Margin="5,10"/>
+
+
+                <Entry x:Name="TextBox1" Grid.Column="2" Grid.Row="1" Text="3"  />
+                <Entry x:Name="TextBox2" Grid.Column="2" Grid.Row="2" Text="4"  />
+                <Entry x:Name="TextBox3" Grid.Column="2" Grid.Row="3" Text="5"  />
+                <Entry x:Name="ResultTextBox" Grid.Column="2" Grid.Row="4"   />
+
+                <Button x:Name="CalculateButton" Grid.Column="2" Grid.Row="5" Text="Bereken" WidthRequest="100" HeightRequest="40" HorizontalOptions="Start"  Clicked="CalculateButton_Click"/>
+
+            </Grid>
+       
+
+</ContentPage>
