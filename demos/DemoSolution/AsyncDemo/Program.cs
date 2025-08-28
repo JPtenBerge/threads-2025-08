@@ -4,7 +4,9 @@ using AsyncDemo;
 Console.WriteLine("Hello, World!");
 
 
-AsyncSpullen.Go().GetAwaiter().GetResult();
+// AsyncSpullen.Go().GetAwaiter().GetResult();
+
+await AsyncEnumery.Go();
 
 // (typeof AsyncSpullen)
-Process.Start("cmd.exe");
+// Process.Start("explorer.exe");
