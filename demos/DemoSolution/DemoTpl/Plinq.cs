@@ -12,7 +12,7 @@ public class Plinq
 
 		var stopwatch = new Stopwatch();
 		stopwatch.Start();
-		var gefiltered = getallen.AsParallel().WithCancellation().AsOrdered().Where(x => IngewikkeldFilter(x));
+		var gefiltered = getallen.AsParallel().AsOrdered().Where(x => IngewikkeldFilter(x));
 		foreach (var getal in gefiltered)
 		{
 			Console.WriteLine($"getal: {getal}");

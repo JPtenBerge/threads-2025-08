@@ -7,4 +7,6 @@ Console.WriteLine("Hello, World!");
 // Basics.Go();
 // Stoppen.Go();
 // Paral.Go();
-Plinq.Go();
+// Plinq.Go();
+// Collectionssss.Go();
+Barrieretje.Go();
